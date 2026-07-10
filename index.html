@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,42 +8,78 @@
 
 <meta name="theme-color" content="#0A4EA3">
 
+<link rel="manifest" href="manifest.json">
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-<header>
+<header class="hero">
 
-<h1>📺 Pantalla Federal</h1>
+    <img src="assets/portada/senal-ajuste.jpg"
+         alt="Señal de ajuste"
+         class="hero-img">
 
-<p>La televisión argentina, provincia por provincia</p>
+    <div class="hero-texto">
+
+        <h1>📺 Pantalla Federal</h1>
+
+        <p>La televisión argentina</p>
+
+        <input
+        type="search"
+        placeholder="Buscar canal, ciudad o provincia...">
+
+    </div>
 
 </header>
 
-<main>
+<main id="contenido">
 
-<section id="busqueda">
+<section class="menu">
 
-<input
-type="search"
-placeholder="Buscar canal, ciudad o provincia...">
+<div class="card">
+🇦🇷
+<h2>Explorar provincias</h2>
+<p>Conocé la televisión de cada rincón del país.</p>
+</div>
 
-</section>
+<div class="card">
+⭐
+<h2>Canales destacados</h2>
+<p>Las señales más vistas.</p>
+</div>
 
-<section id="inicio">
+<div class="card">
+📡
+<h2>TV Pública</h2>
+<p>Canales nacionales y provinciales.</p>
+</div>
 
-<h2>Bienvenido</h2>
+<div class="card">
+🎓
+<h2>Universitarios</h2>
+<p>Universidades públicas argentinas.</p>
+</div>
 
-<p>Muy pronto vas a encontrar aquí los canales de televisión de toda la Argentina.</p>
+<div class="card">
+❤️
+<h2>Favoritos</h2>
+<p>Tus canales preferidos.</p>
+</div>
 
 </section>
 
 </main>
 
+<footer>
+
+Pantalla Federal · Versión 0.2
+
+</footer>
+
 <script src="script.js"></script>
 
 </body>
-
 </html>
