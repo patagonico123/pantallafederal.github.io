@@ -1,3 +1,10 @@
+<!--
+====================================================
+ Pantalla Federal
+ Versión: 0.2 - Identidad
+====================================================
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -6,13 +13,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pantalla Federal</title>
+
+    <meta name="theme-color" content="#0A4EA3">
+    <meta name="description" content="La televisión argentina, provincia por provincia.">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Pantalla Federal</h1>
+    <header class="hero">
 
-    <p>La televisión de cada rincón de Argentina</p>
+        <img src="assets/portada/senal-ajuste.jpg"
+             alt="Carta de ajuste"
+             class="hero-img">
+
+        <div class="hero-texto">
+
+            <h1>Pantalla Federal</h1>
+
+            <p>La televisión argentina, provincia por provincia.</p>
+
+            <input
+                type="search"
+                id="buscar"
+                placeholder="Buscar canal, ciudad o provincia...">
+
+        </div>
+
+    </header>
+
+    <main id="contenido">
+    </main>
+
+    <footer>
+        © 2026 Pantalla Federal
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
