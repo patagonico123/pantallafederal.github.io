@@ -1,1 +1,27 @@
-
+[
+  {
+    "icono": "🇦🇷",
+    "titulo": "Explorar provincias",
+    "texto": "Conocé la televisión de cada rincón del país."
+  },
+  {
+    "icono": "⭐",
+    "titulo": "Canales destacados",
+    "texto": "Las señales más vistas."
+  },
+  {
+    "icono": "📡",
+    "titulo": "TV Pública",
+    "texto": "Canales nacionales y provinciales."
+  },
+  {
+    "icono": "🎓",
+    "titulo": "Universitarios",
+    "texto": "Universidades públicas argentinas."
+  },
+  {
+    "icono": "❤️",
+    "titulo": "Favoritos",
+    "texto": "Tus canales preferidos."
+  }
+]
