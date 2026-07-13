@@ -7,11 +7,9 @@
 */
 
 
-const botonProvincias = document.getElementById("btnProvincias");
+const provincias = await respuesta.json();
 
-alert("Script nuevo cargado");
-
-botonProvincias.addEventListener("click", cargarProvincias);
+alert("Provincias cargadas: " + provincias.length);
 
 
 
