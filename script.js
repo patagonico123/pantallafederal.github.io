@@ -9,6 +9,7 @@
 
 const botonProvincias = document.getElementById("btnProvincias");
 
+alert("Script nuevo cargado");
 
 botonProvincias.addEventListener("click", cargarProvincias);
 
