@@ -16,14 +16,12 @@ botonProvincias.addEventListener("click", cargarProvincias);
 
 async function cargarProvincias() {
 
-
     const respuesta = await fetch("datos/provincias.json");
 
     const provincias = await respuesta.json();
 
 
     const contenido = document.getElementById("contenido");
-
 
     contenido.innerHTML = "";
 
@@ -36,39 +34,89 @@ async function cargarProvincias() {
 
 
 
-    const contenedor = document.createElement("div");
+    const regiones = {
 
-    contenedor.className = "menu";
+        "Norte": [
+            "noa",
+            "nea"
+        ],
 
+        "Centro": [
+            "centro",
+            "amba"
+        ],
 
+        "Cuyo": [
+            "cuyo"
+        ],
 
-    provincias.forEach(provincia => {
+        "Patagonia": [
+            "patagonia"
+        ]
 
-
-        const tarjeta = document.createElement("div");
-
-
-        tarjeta.className = "card";
-
-
-        tarjeta.innerHTML = `
-
-            <div class="icono">🇦🇷</div>
-
-            <h3>${provincia.nombre}</h3>
-
-            <p>
-            Capital: ${provincia.capital}
-            </p>
-
-        `;
+    };
 
 
-        contenedor.appendChild(tarjeta);
+
+    Object.keys(regiones).forEach(nombreRegion => {
+
+
+        const tituloRegion = document.createElement("h3");
+
+        tituloRegion.textContent = nombreRegion;
+
+
+        contenido.appendChild(tituloRegion);
+
+
+
+        const contenedor = document.createElement("div");
+
+        contenedor.className = "menu";
+
+
+
+        provincias
+
+            .filter(provincia =>
+                regiones[nombreRegion].includes(provincia.region)
+            )
+
+            .forEach(provincia => {
+
+
+                const tarjeta = document.createElement("div");
+
+
+                tarjeta.className = "card";
+
+
+                tarjeta.innerHTML = `
+
+                    <div class="icono">🇦🇷</div>
+
+                    <h3>${provincia.nombre}</h3>
+
+                    <p>
+                    Capital: ${provincia.capital}
+                    </p>
+
+                `;
+
+
+                contenedor.appendChild(tarjeta);
+
+
+            });
+
+
+
+        contenido.appendChild(contenedor);
 
 
     });
 
+}
 
 
     contenido.appendChild(contenedor);
