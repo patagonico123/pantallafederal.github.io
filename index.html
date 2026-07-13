@@ -1,7 +1,7 @@
 <!--
 ====================================================
  Pantalla Federal
- Versión: 0.2 - Identidad
+ Versión: 0.5 - Portada
 ====================================================
 -->
 
@@ -9,49 +9,77 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pantalla Federal</title>
 
-    <meta name="theme-color" content="#0A4EA3">
     <meta name="description" content="La televisión argentina, provincia por provincia.">
+
+    <meta name="theme-color" content="#003DA5">
 
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <header class="hero">
+<header class="inicio">
 
-        <img src="assets/portada/senal-ajuste.jpg"
-             alt="Carta de ajuste"
-             class="hero-img">
+    <div class="portada">
 
-        <div class="hero-texto">
+        <h1>Pantalla Federal</h1>
 
-            <h1>Pantalla Federal</h1>
+        <h2>
+            24 provincias.<br>
+            Una sola pantalla.
+        </h2>
 
-            <p>La televisión argentina, provincia por provincia.</p>
+        <p>
+            La televisión argentina desde cada rincón del país.
+        </p>
 
-            <input
-                type="search"
-                id="buscar"
-                placeholder="Buscar canal, ciudad o provincia...">
+    </div>
 
-        </div>
 
-    </header>
+</header>
 
-    <main id="contenido">
-    </main>
 
-    <footer>
-        © 2026 Pantalla Federal
-    </footer>
+<main class="menu-inicio">
 
-    <script src="script.js"></script>
+
+    <button>
+        🇦🇷<br>
+        Explorar provincias
+    </button>
+
+
+    <button>
+        ⭐<br>
+        Canales recomendados
+    </button>
+
+
+    <button>
+        📡<br>
+        TV Abierta
+    </button>
+
+
+</main>
+
+
+<footer>
+
+    © 2026 Pantalla Federal
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 
