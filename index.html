@@ -1,85 +1,52 @@
-<!--
-====================================================
- Pantalla Federal
- Versión: 0.5 - Portada
-====================================================
--->
-
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-    <title>Pantalla Federal</title>
+<title>Pantalla Federal - Prueba TV</title>
 
-    <meta name="description" content="La televisión argentina, provincia por provincia.">
+<style>
 
-    <meta name="theme-color" content="#003DA5">
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" href="style.css">
+video {
+    width: 90%;
+    max-width: 900px;
+    background: black;
+}
+
+</style>
 
 </head>
 
 
 <body>
 
-<header class="inicio">
 
-    <div class="portada">
+<h1>Pantalla Federal</h1>
 
-        <h1>Pantalla Federal</h1>
-
-        <h2>
-            24 provincias.<br>
-            Una sola pantalla.
-        </h2>
-
-        <p>
-            La televisión argentina desde cada rincón del país.
-        </p>
-
-    </div>
+<h2>Prueba de reproducción</h2>
 
 
-</header>
+<video controls autoplay>
+
+<source src="PEGAR_STREAM_AQUI" type="application/x-mpegURL">
+
+</video>
 
 
-<main class="menu-inicio" id="contenido">
+<p>
+Prueba técnica de señal
+</p>
 
-
-   <button id="btnProvincias">
-    🇦🇷<br>
-    Explorar provincias
-</button>
-
-
-    <button>
-        ⭐<br>
-        Canales recomendados
-    </button>
-
-
-    <button>
-        📡<br>
-        TV Abierta
-    </button>
-
-
-</main>
-
-
-<footer>
-
-    © 2026 Pantalla Federal
-
-</footer>
-
-
-<script src="script.js"></script>
 
 </body>
 
