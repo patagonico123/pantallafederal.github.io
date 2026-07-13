@@ -119,7 +119,4 @@ async function cargarProvincias() {
 }
 
 
-    contenido.appendChild(contenedor);
-
-
-}
+  
