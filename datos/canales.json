@@ -1,1 +1,70 @@
-
+[
+  {
+    "id": "canal-9-santa-cruz",
+    "nombre": "Canal 9 Santa Cruz",
+    "provincia": "Santa Cruz",
+    "ciudad": "Río Gallegos",
+    "tipo": "publico",
+    "contenido": "generalista",
+    "cobertura": "provincial",
+    "tdta": "30.1",
+    "web": "https://canal9.santacruz.gob.ar/",
+    "stream": {
+      "estado": "activo",
+      "tipo": "web",
+      "url": "https://canal9.santacruz.gob.ar/transmision-en-vivo"
+    },
+    "observaciones": "Canal público provincial. Señal histórica Canal 9. Presencia en TDA."
+  },
+  {
+    "id": "televida-canal-9-mendoza",
+    "nombre": "Televida Canal 9 Mendoza",
+    "provincia": "Mendoza",
+    "ciudad": "Mendoza",
+    "tipo": "privado",
+    "contenido": "generalista",
+    "cobertura": "regional",
+    "tdta": "28.1",
+    "web": "https://elnueve.com/page/en-vivo",
+    "stream": {
+      "estado": "activo",
+      "tipo": "web",
+      "url": "https://elnueve.com/page/en-vivo"
+    },
+    "observaciones": "Canal privado generalista. Cobertura Gran Mendoza."
+  },
+  {
+    "id": "tv-universidad-unlp",
+    "nombre": "TV Universidad",
+    "provincia": "Buenos Aires",
+    "ciudad": "La Plata",
+    "tipo": "universitario",
+    "contenido": "educativo-cultural",
+    "cobertura": "local",
+    "tdta": "32.1",
+    "web": "https://tv.unlp.edu.ar/",
+    "stream": {
+      "estado": "pendiente",
+      "tipo": "",
+      "url": ""
+    },
+    "observaciones": "Señal universitaria de la Universidad Nacional de La Plata. Disponible en TDA La Plata."
+  },
+  {
+    "id": "pares-tv",
+    "nombre": "Pares TV",
+    "provincia": "Buenos Aires",
+    "ciudad": "Luján",
+    "tipo": "comunitario",
+    "contenido": "alternativo",
+    "cobertura": "local",
+    "tdta": "32.1",
+    "web": "https://parestv.com.ar/",
+    "stream": {
+      "estado": "pendiente",
+      "tipo": "",
+      "url": ""
+    },
+    "observaciones": "Canal comunitario alternativo. Señal con presencia en TDA Luján."
+  }
+]
